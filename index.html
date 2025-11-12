@@ -1,33 +1,198 @@
-<section id="peces" style="padding:60px 20px; background-color:#f0f9ff;">
-  <h2 style="text-align:center; font-size:2em; margin-bottom:30px; color:#004aad;">Catálogo de Peces Disco</h2>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peces Disco Premium - Venta y Cría Especializada</title>
+  <style>
+    /* === ESTILOS GENERALES === */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #e8f6ff;
+      color: #222;
+    }
 
-  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px; max-width:1100px; margin:0 auto;">
-    
-    <div style="background:white; border-radius:15px; box-shadow:0 4px 8px rgba(0,0,0,0.1); width:250px; text-align:center; overflow:hidden;">
-      <img src="https://images.unsplash.com/photo-1604668915840-527a3a0842b6?auto=format&fit=crop&w=500&q=80" alt="Pez Disco Azul" style="width:100%; height:180px; object-fit:cover;">
-      <div style="padding:15px;">
-        <h3>Pez Disco Azul</h3>
-        <p>Color intenso y temperamento tranquilo.</p>
-        <strong>$950 MXN</strong>
-      </div>
-    </div>
+    h2 {
+      color: #004aad;
+    }
 
-    <div style="background:white; border-radius:15px; box-shadow:0 4px 8px rgba(0,0,0,0.1); width:250px; text-align:center; overflow:hidden;">
-      <img src="https://images.unsplash.com/photo-1622288439703-df3230b7b0c4?auto=format&fit=crop&w=500&q=80" alt="Pez Disco Rojo" style="width:100%; height:180px; object-fit:cover;">
-      <div style="padding:15px;">
-        <h3>Pez Disco Rojo</h3>
-        <p>Ideal para acuarios de exhibición.</p>
-        <strong>$1,100 MXN</strong>
-      </div>
-    </div>
+    /* === ENCABEZADO === */
+    header {
+      background: linear-gradient(90deg, #004aad, #007bff);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
 
-    <div style="background:white; border-radius:15px; box-shadow:0 4px 8px rgba(0,0,0,0.1); width:250px; text-align:center; overflow:hidden;">
-      <img src="https://images.unsplash.com/photo-1623072393553-3d44c8b07b3b?auto=format&fit=crop&w=500&q=80" alt="Pez Disco Leopardo" style="width:100%; height:180px; object-fit:cover;">
-      <div style="padding:15px;">
-        <h3>Pez Disco Leopardo</h3>
-        <p>Patrón exótico y muy solicitado.</p>
-        <strong>$1,250 MXN</strong>
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffde59;
+    }
+
+    /* === SECCIÓN HERO === */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: url('https://images.unsplash.com/photo-1617196034796-3c8b1bca73b9?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+      color: white;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* === CATÁLOGO === */
+    #peces {
+      padding: 60px 20px;
+      background-color: #f0f9ff;
+    }
+
+    #peces h2 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    .catalogo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .tarjeta {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 250px;
+      text-align: center;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .tarjeta:hover {
+      transform: translateY(-5px);
+    }
+
+    .tarjeta img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .tarjeta div {
+      padding: 15px;
+    }
+
+    .tarjeta h3 {
+      margin-bottom: 5px;
+    }
+
+    .tarjeta strong {
+      color: #004aad;
+    }
+
+    /* === PIE DE PÁGINA === */
+    footer {
+      background-color: #004aad;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #ffde59;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- === ENCABEZADO === -->
+  <header>
+    <h1>Peces Disco Premium</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#peces">Peces</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- === HERO === -->
+  <section class="hero" id="inicio">
+    <h2>Venta especializada de peces disco</h2>
+    <p>Calidad garantizada, asesoría y envío a toda la República Mexicana.</p>
+  </section>
+
+  <!-- === CATÁLOGO === -->
+  <section id="peces">
+    <h2>Catálogo de Peces Disco</h2>
+    <div class="catalogo">
+
+      <div class="tarjeta">
+        <img src="https://images.unsplash.com/photo-1604668915840-527a3a0842b6?auto=format&fit=crop&w=500&q=80" alt="Pez Disco Azul">
+        <div>
+          <h3>Pez Disco Azul</h3>
+          <p>Color intenso y temperamento tranquilo.</p>
+          <strong>$950 MXN</strong>
+        </div>
       </div>
+
+      <div class="tarjeta">
+        <img src="https://images.unsplash.com/photo-1622288439703-df3230b7b0c4?auto=format&fit=crop&w=500&q=80" alt="Pez Disco Rojo">
+        <div>
+          <h3>Pez Disco Rojo</h3>
+          <p>Ideal para acuarios de exhibición.</p>
+          <strong>$1,100 MXN</strong>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <img src="https://images.unsplash.com/photo-1623072393553-3d44c8b07b3b?auto=format&fit=crop&w=500&q=80" alt="Pez Disco Leopardo">
+        <div>
+          <h3>Pez Disco Leopardo</h3>
+          <p>Patrón exótico y muy solicitado.</p>
+          <strong>$1,250 MXN</strong>
+        </div>
+      </div>
+
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- === PIE DE PÁGINA === -->
+  <footer>
+    <p>© 2025 Peces Disco Premium | Todos los derechos reservados</p>
+    <p>📱 <a href="https://wa.me/5215512345678" target="_blank">Contáctanos por WhatsApp</a></p>
+  </footer>
+
+</body>
+</html>
