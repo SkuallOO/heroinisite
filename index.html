@@ -3,78 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Heroini Discus - Peces Disco Premium - Venta y Mantenimiento Especializado para acuarios de agua dulce y marinos</title>
+  <title>Heroini Discus - Peces Disco Premium</title>
+
+  <!-- TIPOGRAFÍA -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
   <style>
-    /* === ESTILOS GENERALES === */
     body {
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
       background-color: #FFFFFF;
       color: #222;
     }
 
     h2 {
-      color: #FFFFFF;
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 20px;
     }
 
-    /* === ENCABEZADO === */
+    /* HEADER */
     header {
-      background: linear-gradient(90deg, #FFFFFF, #FFFFFF);
+      background: #000;
       color: white;
-      padding: 20px 0;
+      padding: 15px 0;
       text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
       position: sticky;
       top: 0;
       z-index: 100;
-    }
-
-    nav {
-      margin-top: 10px;
     }
 
     nav a {
       margin: 0 15px;
       color: white;
       text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s ease;
+      font-weight: bold;
     }
 
     nav a:hover {
-      color: #FFFFFF;
+      color: #EADA09;
     }
 
-    /* === SECCIÓN HERO === */
+    /* HERO */
     .hero {
       text-align: center;
-      padding: 80px 20px;
+      padding: 100px 20px;
       background: url('https://images.unsplash.com/photo-1617196034796-3c8b1bca73b9?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
       color: white;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
     }
 
     .hero h2 {
-      font-size: 2.5em;
+      font-size: 2.8em;
       margin-bottom: 15px;
     }
 
     .hero p {
       font-size: 1.2em;
-      max-width: 600px;
-      margin: 0 auto;
+      margin-bottom: 20px;
     }
 
-    /* === CATÁLOGO === */
+    .btn {
+      background: #EADA09;
+      color: black;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* CATÁLOGO */
     #peces {
       padding: 60px 20px;
-      background-color: #FFFFFF;
-    }
-
-    #peces h2 {
-      text-align: center;
-      font-size: 2em;
-      margin-bottom: 30px;
     }
 
     .catalogo {
@@ -82,18 +81,16 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
-      max-width: 1100px;
-      margin: 0 auto;
     }
 
     .tarjeta {
       background: white;
-      border-radius: 15px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      width: 250px;
-      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      width: 260px;
       overflow: hidden;
-      transition: transform 0.3s ease;
+      text-align: center;
+      transition: 0.3s;
     }
 
     .tarjeta:hover {
@@ -110,100 +107,117 @@
       padding: 15px;
     }
 
-    .tarjeta h3 {
-      margin-bottom: 5px;
+    .precio {
+      color: #000;
+      font-weight: bold;
+      margin: 10px 0;
     }
 
-    .tarjeta strong {
-      color: #FFFFFF;
+    .btn-whatsapp {
+      display: inline-block;
+      background: #EADA09;
+      color: black;
+      padding: 8px 15px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
     }
 
-    /* === PIE DE PÁGINA === */
+    /* FOOTER */
     footer {
-      background-color: #FFFFFF;
+      background: #000;
       color: white;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
     }
 
     footer a {
-      color: #FFFFFF;
+      color: #EADA09;
+    }
+
+    /* BOTÓN WHATSAPP FLOTANTE */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
       text-decoration: none;
       font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
 
   </style>
 </head>
+
 <body>
-  <!-- === ENCABEZADO === -->
-  <header>
-    <h1>Heroini Discus - Peces Disco Premium</h1>
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#peces">Peces</a>
-      <a href="#galeria">Galería</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
 
-  <!-- === HERO === -->
-  <section class="hero" id="inicio">
-    <h2>Venta y Mantenimiento especializado para peces disco</h2>
-    <p>Calidad garantizada, asesoría y envío a toda la República Mexicana.</p>
-  </section>
+<header>
+  <h1>Heroini Discus</h1>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#peces">Catálogo</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
 
-  <!-- === CATÁLOGO === -->
-  <section id="peces">
-    <h2>Catálogo de Peces Disco</h2>
-    <div class="catalogo">
+<section class="hero" id="inicio">
+  <h2>Peces Discus de Alta Calidad</h2>
+  <p>Venta, asesoría y envío a toda la República Mexicana</p>
+  <a href="#peces" class="btn">Ver catálogo</a>
+</section>
 
-      <div class="tarjeta">
-        <img src="img/blue-diamond-1.jpg" alt="Blue Diamond">
-        <div>
-          <h3>Blue Diamond</h3>
-          <p>Color intenso y temperamento tranquilo.</p>
-          <strong>$950 MXN</strong>
-        </div>
+<section id="peces">
+  <h2>Catálogo</h2>
+
+  <div class="catalogo">
+
+    <div class="tarjeta">
+      <img src="img/blue-diamond-1.jpg">
+      <div>
+        <h3>Blue Diamond</h3>
+        <p>Pez tranquilo y de color intenso</p>
+        <div class="precio">$950 MXN</div>
+        <a href="https://wa.me/525519381081" class="btn-whatsapp">Comprar</a>
       </div>
-
-      <div class="tarjeta">
-        <img src="img/blue-diamond-1.jpg" alt="Blue Diamond">
-        <div>
-          <h3>Red Cover Blue R</h3>
-          <p>Ideal para acuarios de exhibición.</p>
-          <strong>$1,100 MXN</strong>
-        </div>
-      </div>
-
-      <div class="tarjeta">
-        <img src="" alt="Pez Disco Leopardo">
-        <div>
-          <h3>Leopardo</h3>
-          <p>Patrón exótico y muy solicitado.</p>
-          <strong>$1,250 MXN</strong>
-        </div>
-      </div>
-
     </div>
-  </section>
 
-  <!-- === PIE DE PÁGINA === -->
-  <footer>
-    <p>© 2025 Heroini Discus Peces Disco Premium | Todos los derechos reservados</p>
-    <p>📱 <a href="https://wa.me/525519381081" target="_blank">Contáctanos por WhatsApp</a></p>
-  </footer>
-<a href="https://wa.me/525519381081" class="whatsapp">
-  WhatsApp
-</a>
+    <div class="tarjeta">
+      <img src="img/blue-diamond-1.jpg">
+      <div>
+        <h3>Red Cover Blue</h3>
+        <p>Ideal para acuarios de exhibición</p>
+        <div class="precio">$1,100 MXN</div>
+        <a href="https://wa.me/525519381081" class="btn-whatsapp">Comprar</a>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <img src="img/blue-diamond-1.jpg">
+      <div>
+        <h3>Leopardo</h3>
+        <p>Patrón exótico y muy solicitado</p>
+        <div class="precio">$1,250 MXN</div>
+        <a href="https://wa.me/525519381081" class="btn-whatsapp">Comprar</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer id="contacto">
+  <p>© 2025 Heroini Discus</p>
+  <p>
+    <a href="https://wa.me/525519381081">Contáctanos por WhatsApp</a>
+  </p>
+</footer>
+
+<a href="https://wa.me/525519381081" class="whatsapp">💬</a>
+
 </body>
 </html>
-
-
-
-
-
-
 
 
 
