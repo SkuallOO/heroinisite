@@ -9,3 +9,11 @@
 .card:hover {
   transform: translateY(-5px);
 }
+.hero h2 {
+  color: #EADA09;
+  font-weight: bold;
+}
+
+.hero p {
+  color: #FFFFFF;
+}
