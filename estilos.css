@@ -104,7 +104,7 @@ header {
 .btn-whatsapp {
     display: inline-block;
     margin-bottom: 15px;
-    background: #25D366;
+    background: #EADA09;
     color: white;
     padding: 8px 15px;
     border-radius: 6px;
@@ -128,7 +128,7 @@ footer a {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #25D366;
+    background: #EADA09;
     color: white;
     padding: 15px;
     border-radius: 50%;
